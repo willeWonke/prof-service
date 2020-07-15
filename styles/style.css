@@ -15,12 +15,44 @@ header {
 .menu {
     display: flex;
     justify-content: space-between;
-}
-.menu ul {
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
     align-items: center;
+}
+.menu li {
+    display: block;
+    float: left;
+    padding: 1rem;
+    transition-duration: 0.5s;
+    position: relative;
+}
+.menu .home {
+    padding-top: 0.5rem;
+    padding-bottom: 0.69rem;
+}
+.menu li:hover {
+    background: rgb(138, 128, 128);
+}
+.menu ul li ul {
+    z-index: 1;
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 18rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    font-size: 10px;
+}
+.menu ul li:hover > ul,
+.menu li ul:hover  {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.menu ul li ul li {
+    clear: both;
+    width: 100%;
 }
 .menu a {
     color: #000;
