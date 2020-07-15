@@ -1,0 +1,27 @@
+html, body {
+    width: 100%;
+}
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* End of basic styles */
+
+/* Start of header */
+header {
+    font-size: 14px;
+    padding: 0.5%;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    color: #000;
+}
