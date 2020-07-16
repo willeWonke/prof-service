@@ -9,13 +9,17 @@ html, body {
 
 /* Start of header */
 header {
-    font-size: 14px;
+    font-size: 0.9em;
     padding: 0.5%;
 }
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.menu .home {
+    padding-top: 0.57em;
+    padding-bottom: 0.83em;
 }
 .menu li {
     display: block;
@@ -24,36 +28,34 @@ header {
     transition-duration: 0.5s;
     position: relative;
 }
-.menu .home {
-    padding-top: 0.5rem;
-    padding-bottom: 0.69rem;
-}
 .menu li:hover {
-    background: rgb(138, 128, 128);
+    background: rgb(167, 156, 156);
+}
+.menu a {
+    color: #000;
 }
 .menu ul li ul {
     z-index: 1;
     background: orange;
     visibility: hidden;
     opacity: 0;
-    min-width: 18rem;
+    width: 32em;
     position: absolute;
     transition: all 0.5s ease;
     margin-top: 1rem;
     left: 0;
     display: none;
-    font-size: 10px;
+    font-size: 0.7em;
 }
-.menu ul li:hover > ul,
-.menu li ul:hover  {
+/* .menu li ul:hover */
+.menu ul li:hover > ul {
     visibility: visible;
     opacity: 1;
     display: block;
 }
 .menu ul li ul li {
     clear: both;
-    width: 100%;
+    width: 90%;
+    font-weight: bold;
 }
-.menu a {
-    color: #000;
-}
+
